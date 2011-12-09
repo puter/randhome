@@ -11,9 +11,9 @@ function homepage () {
     'http://latimes.com',
     'http://news.google.com'
 	];
-    var number = pages.length;
-	var page = Math.floor(Math.random()*number);
-	window.location = pages[page];
+    //var number = pages.length;
+	//var page = Math.floor(Math.random()*number);  
+	window.location = pages[Math.floor(Math.random()*pages.length)]; //// no sense storing a variable for only one use.
 }
 </script>
 </head><body onload="homepage();"></body>
